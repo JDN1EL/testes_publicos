@@ -1,5 +1,3 @@
-r = 1
-t = 10
-while (r <= t):
-    input('Rodada {} de {}, digite até 10\n'.format(r,t))
-    r = r + 1
+import random
+i = random.random() * 10
+print(int(i))
