@@ -32,7 +32,7 @@ for rodada in range (1, tt +1):
       continue
      
    acertou = chute == ns
-   maior = chute > ns
+   maior = chute > ns 
    menor = chute < ns
 
    if (acertou):
