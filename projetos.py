@@ -1,7 +1,3 @@
-'''import random
-i = random.random() * 10
-print(int(i))'''
-
 import random
 #ns -> numero secreto, tt -> total de tentativas, r -> rodada, cstr -> chute_str, p -> pontos, pp -> pontos perdidos
 print ('='*33,'\nBem vindo ao jogo de adivinhação\n','='*33)
@@ -9,7 +5,7 @@ print ('='*33,'\nBem vindo ao jogo de adivinhação\n','='*33)
 ns = random.randrange (1,11)
 tt = 0
 p = 200
-print ("Escolha a dificuldade:\n")
+print ("Escolha a dificuldade:\n",ns)
 print ("(1) Facil (2) Médio (3) Dificil")
 
 nivel = int (input ('Defina o nivel: '))
@@ -32,11 +28,11 @@ for rodada in range (1, tt +1):
       continue
      
    acertou = chute == ns
-   maior = chute > ns 
+   maior = chute > ns
    menor = chute < ns
 
    if (acertou):
-      print ('Acertô miserávi!\n Total de ponstos {}'.format(p))
+      print ('Acertô miserávi!\n Total de pontos {}'.format(p))
       break
    else:
       if (maior):
